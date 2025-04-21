@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to BLDEA Bank</h1>
+        
+        <div id="main-menu">
+            <button id="create-account-btn">Create Account</button>
+            <button id="login-btn">Login</button>
+        </div>
+
+        <div id="create-account" class="hidden">
+            <h2>Create Account</h2>
+            <label for="account-name">Name:</label>
+            <input type="text" id="account-name" placeholder="Enter your name">
+            <label for="account-pin">PIN:</label>
+            <input type="password" id="account-pin" maxlength="4" placeholder="Enter a 4-digit PIN">
+            <button id="submit-create-account">Submit</button>
+            <button id="back-create-account">Back</button>
+            <p id="create-account-message"></p>
+        </div>
+
+        <div id="login" class="hidden">
+            <h2>Login</h2>
+            <label for="login-name">Name:</label>
+            <input type="text" id="login-name" placeholder="Enter your name">
+            <label for="login-pin">PIN:</label>
+            <input type="password" id="login-pin" maxlength="4" placeholder="Enter your 4-digit PIN">
+            <button id="submit-login">Login</button>
+            <button id="back-login">Back</button>
+            <p id="login-message"></p>
+        </div>
+
+        <div id="account-menu" class="hidden">
+            <h2 id="account-title"></h2>
+            <button id="show-balance-btn">Show Balance</button>
+            <button id="deposit-btn">Deposit Money</button>
+            <button id="withdraw-btn">Withdraw Money</button>
+            <button id="transactions-btn">Show Transactions</button>
+            <button id="logout-btn">Logout</button>
+            <div id="account-output"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
